@@ -1,0 +1,465 @@
+body {
+    font-family: "Poppins";
+    margin: 0px;
+    background: url('imagenes/hall.jpg') no-repeat center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.contenedor-encabezado {
+    max-width: 1200px;
+    text-align: center;
+}
+
+.menu {
+    position:center;
+    padding: 0px;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    list-style: none;
+}
+/* Menú y poner subrayado */
+nav ul li a {
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: 800;
+    padding: 5px 10px; 
+    position: relative; 
+    transition: color 0.3s, background-color 0.3s; 
+    display: inline-block; 
+}
+/* Para subrayar el menú */
+nav ul li a::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: width 0.3s ease, background-color 0.3s ease; 
+}
+/* Para subrayar el menú */
+nav ul li a:hover::after {
+    width: 100%; 
+    background-color: #000000; 
+}
+
+.titulo{
+    margin:0%;
+}
+
+.titulo h1 {
+        font-size: 50px;
+        background: rgba(63, 114, 182, 0.7);
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 5px 20px; 
+        display: inline-block;
+        max-width: 60%; 
+        text-align: center;
+        margin-top: 50px;
+}
+
+.titulo h2 {
+    font-size: 30px;
+    color: #073644;
+    padding-top: 0px;
+}
+
+ /* Botón reserva */
+.btn-reserva {
+    margin-top: 10px;
+    padding: 10px 15px; 
+    background-color: #f7f7f79a; 
+    color: #073644; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block; 
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+ /* Efecto Botón reserva */
+.btn-reserva:hover {
+    background-color: #073644; 
+    color: #ffffff; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+#hotel {
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 210px;
+}
+
+#hotel h2 {
+    font-size: 35px;
+    color: #073644;
+    margin-top: -30px;
+}
+
+#hotel p {
+    font-size: 18px;
+    background-color: #ffffff6e;
+    padding: 10px 110px;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto; 
+    border-radius: 10px;
+    max-width: 63%;
+}
+
+#habitaciones {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#habitaciones .contenedor {
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 1000px;
+    margin: auto;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+#habitaciones h2 {
+    font-size: 35px;
+    color: #073644;
+    margin-bottom: 5px;
+}
+/* Ajustes del carrusel */
+.owl-carousel {
+    display: block !important;
+}
+.owl-carousel .owl-stage {
+    display: flex;
+}
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-carousel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+/* Estilo de las flechas del carrusel */
+.owl-prev, .owl-next {
+    font-size: 30px;
+    color: #ffffff; 
+    border-radius: 50%; 
+    padding: 30px; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1000; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+.owl-prev {
+    left: 10px; 
+}
+.owl-next {
+    right: 10px;
+}
+/* Estilo de los span dentro de las flechas */
+.owl-prev span, .owl-next span {
+    font-size: 40px; 
+    color: #000000; 
+    display: block; 
+    text-align: center; 
+    line-height: 1; 
+}
+#ofertas {
+    padding: 40px 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    max-width: 70%;
+    margin-top: 30px;
+    margin-left:155px;
+    margin-bottom: 40px;
+}
+
+#ofertas h2 {
+    font-size: 35px;
+    color: #073644;
+    margin-top: -30px;
+    font-weight: 600;
+}
+
+#ofertas p {
+    font-size: 18px;
+    background: #ffffff86;
+    padding: 10px 110px;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 58%;
+    font-weight: 400;
+}
+
+.oferta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 77%;
+    max-width: 800px;
+    transition: transform 0.3s;
+}
+
+.oferta h3 {
+    font-size: 26px;
+    color: #073644;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.oferta p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 400;
+}
+/* Efecto al pasar el ratón sobre cada oferta */
+.oferta:hover {
+    transform: translateY(-10px); 
+}
+.oferta img {
+    border-radius: 10px;
+    width: 300px; 
+    height: 210px; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+}
+#servicios {
+    padding: 10px 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.705);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: 0 auto; 
+}
+.contenedor-s h2 {
+    font-size: 35px;
+    color: #073644;
+}
+.contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px;
+    max-width: 1000px; 
+    margin: auto;
+}
+.servicio {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between; 
+    width: 400px; 
+    height: 400px; 
+    margin: auto;
+}
+.servicio img {
+    border-radius: 10px;
+    width: 300px; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+}
+.servicio h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+.servicio p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+
+#contacto {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.705);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contenedor-info {
+    width: 60%; 
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-info h2 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.contenedor-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.mapa {
+    width: 100%;
+    height: 150px;
+    border: 0;
+    margin-top: 15px;
+}
+
+.formulario-contacto {
+    width: 30%;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contacto label {
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+
+#contacto input, 
+#contacto textarea {
+    width: 95%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+#contacto input:focus, 
+#contacto textarea:focus {
+    border-color: #1e3a8a;
+    outline: none;
+}
+
+#contacto button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 2px;
+    background-color: #145925;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#contacto button:hover {
+    background-color: #567370;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #686868;
+}
+
+footer p {
+    margin: 0px;
+    text-align: center;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .menu nav ul li {
+        display: block;
+    }
+
+    .oferta img, .servicio img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu nav ul li a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .section h1 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+}
